@@ -8,6 +8,7 @@ class XmlReader:
         self.path = file_path
         self.root = ET.parse(file_path)
         self.data = None
+
     def read(self):
         self.data = []
         for b in self.root.findall("book"):
@@ -16,7 +17,7 @@ class XmlReader:
 
 
 
-path = "../input/books.xml"
-reader = XmlReader(path)
-books = reader.read()
-print(books)
+# path = "../input/books.xml"
+# reader = XmlReader(path)
+# books = reader.read()
+# print(books)
